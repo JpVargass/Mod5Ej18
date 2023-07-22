@@ -139,6 +139,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/btMostrar"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btGuardar" />
@@ -149,6 +150,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="placeholder"
+        android:textColor="@color/paleta4"
         app:layout_constraintStart_toEndOf="@+id/switch1"
         app:layout_constraintTop_toTopOf="@+id/switch1" />
 
@@ -160,7 +162,7 @@
         android:gravity="center"
         android:text="Ejemplo Persistencia"
         android:textColor="@color/white"
-        android:textSize="16sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
