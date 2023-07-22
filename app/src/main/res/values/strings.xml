@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Mod5Ej18</string>
+
+    <string name="etTexto">Ingrese Texto</string>
+    <string name="etEntero">Ingrese Entero</string>
+    <string name="etDecimal">Ingrese Decimal</string>
+    <string name="btBorrar">Borrar</string>
+    <string name="btGuardar">Guardar</string>
+    <string name="btMostrar">Mostrar Valores</string>
 </resources>
