@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun mostrarDatos(){
+    private fun mostrarDatos() {
         val texto = mSharedPreferences.getString("miTexto", "")
         val entero = mSharedPreferences.getInt("miEntero", 0)
         val decimal = mSharedPreferences.getFloat("miDecimal", 0.0f)
@@ -53,5 +53,20 @@ class MainActivity : AppCompatActivity() {
         binding.tvSwitch.text = boleano.toString()
 
         binding.switch1.isChecked = boleano
+    }
+
+    private fun borrarDatos() {
+        binding.tvTexto.text = ""
+        binding.tvEntero.text = ""
+        binding.tvDecimal.text = ""
+        binding.tvSwitch.text = ""
+
+        binding.etTexto.text.clear()
+        binding.etEntero.text.clear()
+        binding.etDecimal.text.clear()
+        binding.switch1.isChecked = false
+
+        mSharedPreferences.edit().clear().apply()
+
     }
 }
