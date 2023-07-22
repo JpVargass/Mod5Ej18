@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvEntero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Hello World!"
+        android:textColor="@color/paleta4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etEntero"
+        app:layout_constraintTop_toBottomOf="@+id/etEntero"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <EditText
+        android:id="@+id/etEntero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:hint="@string/etEntero"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="@color/paleta4"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:hint="@string/etTexto"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvEntero"
+        app:layout_constraintTop_toBottomOf="@+id/tvEntero"
+        tools:textColor="@color/paleta4" />
+
+    <TextView
+        android:id="@+id/tvTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="@color/paleta4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etTexto"
+        app:layout_constraintTop_toBottomOf="@+id/etTexto" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:text="Switch"
+        android:textColor="@color/paleta4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvTexto"
+        app:layout_constraintTop_toBottomOf="@+id/tvTexto" />
+
+    <EditText
+        android:id="@+id/etDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:hint="@string/etDecimal"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etEntero"
+        app:layout_constraintTop_toTopOf="@+id/textView7"
+        tools:textColor="@color/paleta3" />
+
+    <TextView
+        android:id="@+id/tvDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="@color/paleta4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/etDecimal" />
+
+    <Button
+        android:id="@+id/btBorrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="#D1782B"
+        android:minHeight="48dp"
+        android:text="@string/btBorrar"
+        app:layout_constraintBottom_toTopOf="@+id/btMostrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btGuardar"
+        app:layout_constraintTop_toTopOf="@+id/etDecimal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:backgroundTint="#5BA82F"
+        android:minHeight="48dp"
+        android:text="@string/btGuardar"
+        app:layout_constraintBottom_toTopOf="@+id/btMostrar"
+        app:layout_constraintStart_toEndOf="@+id/etTexto"
+        app:layout_constraintTop_toBottomOf="@+id/tvDecimal" />
+
+    <Button
+        android:id="@+id/btMostrar"
+        android:layout_width="376dp"
+        android:layout_height="44dp"
+        android:text="@string/btMostrar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <TextView
+        android:id="@+id/tvSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="placeholder"
+        android:textColor="@color/paleta4"
+        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="@+id/switch1" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/paleta1"
+        android:gravity="center"
+        android:text="Ejemplo Persistencia"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
