@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="paleta1">#025159</color> // para background app
+    <color name="paleta2">#3F858C</color>
+    <color name="paleta3">#7AB8BF</color> // para fondos imagenes
+    <color name="paleta4">#C4EEF2</color>
+    <color name="paleta5">#A67458</color> // fondo de botones
+
 </resources>
