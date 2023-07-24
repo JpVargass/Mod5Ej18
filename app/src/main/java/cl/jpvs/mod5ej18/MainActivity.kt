@@ -29,6 +29,9 @@ class MainActivity : AppCompatActivity() {
         binding.btMostrar.setOnClickListener {
             mostrarDatos()
         }
+        binding.btBorrar.setOnClickListener {
+            borrarDatos()
+        }
 
     }
 
